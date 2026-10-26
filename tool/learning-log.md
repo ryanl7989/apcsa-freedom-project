@@ -1,13 +1,15 @@
 # Tool Learning Log
 
-## Tool: **X**
+## Tool: **libGDX**
 
-## Project: **X**
+## Project: **Running game**
 
 ---
 
-### X/X/XX:
-* Text
+### 10/25/2026:
+* Watched this video [libgdx tutorial](https://www.youtube.com/watch?v=EAV5CNRBOWE) and tried to follow along on my computer.
+* I installed the files for libgdx but I can't figure out how to run it.
+* Next time im going to focus on trying to code with it.
 
 ### X/X/XX:
 * Text
