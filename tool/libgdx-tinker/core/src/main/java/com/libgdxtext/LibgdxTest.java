@@ -10,31 +10,29 @@ import com.badlogic.gdx.utils.ScreenUtils;
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
 public class LibgdxTest extends ApplicationAdapter {
     private SpriteBatch batch;
-    private Texture image;
+    private Texture logo;
+    private Texture cat;
 
     @Override
     public void create() {
         batch = new SpriteBatch();
-        image = new Texture("libgdx.png");
+        logo = new Texture("libgdx.png");
+        cat = new Texture("catImg.png");
     }
-
-    // @Override
-    // public void render() {
-    //     ScreenUtils.clear(0.15f, 0.15f, 0.2f, 1f);
-    //     batch.begin();
-    //     batch.draw(image, 0, 0);
-    //     batch.end();        
-    // }
 
     @Override
     public void render() {
-        Gdx.gl.glClearColor(0, 0, 0, 1);
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        ScreenUtils.clear(0.15f, 0.15f, 0.2f, 1f);
+        batch.begin();
+        batch.draw(logo, 300, 0);
+        batch.draw(cat, 600, 300);
+        batch.end();        
     }
 
     @Override
     public void dispose() {
         batch.dispose();
-        image.dispose();
+        logo.dispose();
+        cat.dispose();
     }
 }
